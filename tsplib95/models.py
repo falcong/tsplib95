@@ -473,7 +473,7 @@ class StandardProblem(Problem):
             return iter(nodes)
 
         try:
-            return iter(range(self.dimension))
+            return iter(range(1, self.dimension+1))
         except Exception:
             raise ValueError('undefined nodes')
 
